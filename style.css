@@ -45,3 +45,9 @@
     opacity: .5;
     text-align: right;
   }
+
+  .menu {
+    top: 10px;
+    left: 10px;
+    
+  }
