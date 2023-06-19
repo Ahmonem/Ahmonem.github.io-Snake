@@ -1,0 +1,95 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: black;
+  }
+  
+  .snakes {
+    background-color: blue;
+    border: .25vmin solid black;
+  }
+
+  #game-board {
+    background-color: #CCC;
+    width: 100vmin;
+    height: 100vmin;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+  }
+  
+  .apple {
+    background-color: red;
+    border: .25vmin solid black;
+  }
+  
+  .score {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 7vh;
+    color: blue;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0 2vh;
+    margin: 1vh 0;
+    opacity: .5;
+    text-align: right;
+  }
+  
+  .timer {
+    display: flex;
+    font-weight: bold;
+    font-size: 7vh;
+    color: burlywood;
+    top: 0px;
+    left: 0px;
+    position:absolute;
+  }
+
+  .snakeButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid #333;
+  }
+  
+
+  .pongButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid #333;
+  }
+
+
+
+  .pause {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 7vh;
+    background-color: #333;
+    width: 2.5vh;
+    height: 2.5vh;
+    border: 2px solid #333;
+  }
